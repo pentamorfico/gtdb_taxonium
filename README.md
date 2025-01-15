@@ -25,6 +25,6 @@ pip install taxoniumtools
 Then we run taxonium tools to format everything into a single JSON:
 
 ```bash
-newick_to_taxonium -i bac120.tree -m bac120_taxonomy_taxonium.tsv -o gtdb_taxonium.json --key_column "name" -c Domain,Phylum,Class,Order,Family,Genus,Species
+newick_to_taxonium -i bac120.tree -m bac120_taxonomy_taxonium.tsv -o gtdb_taxonium.jsonl --key_column "name" -c Domain,Phylum,Class,Order,Family,Genus,Species
 ```
 
