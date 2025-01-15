@@ -28,3 +28,8 @@ Then we run taxonium tools to format everything into a single JSON:
 newick_to_taxonium -i bac120.tree -m bac120_taxonomy_taxonium.tsv -o gtdb_taxonium.jsonl --key_column "name" -c Domain,Phylum,Class,Order,Family,Genus,Species
 ```
 
+Add the file to taxonium using the protourl parameter and color by phylum 
+
+```bash
+https://taxonium.org/?protoUrl=https%3A%2F%2Fraw.githubusercontent.com%2Fpentamorfico%2Fgtdb_taxonium%2Frefs%2Fheads%2Fmain%2Fgtdb_taxonium.jsonl&xType=x_dist&color=%7B%22field%22%3A%22meta_Phylum%22%7D
+```
